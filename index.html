@@ -3,109 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Product Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f9f9f9;
         }
         header {
-            background: #0077b6;
-            color: #fff;
+            background-color: #4CAF50;
+            color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            background: #023e8a;
+            text-align: center;
+            background: #333;
+            padding: 10px;
         }
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
-            padding: 15px 20px;
+            margin: 0 15px;
+            font-weight: bold;
         }
         nav a:hover {
-            background: #0077b6;
+            color: #FFD700;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        .section {
-            margin-bottom: 40px;
-        }
-        .projects {
+        .product {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
         }
-        .project-card {
-            background: #fff;
+        .product-card {
+            width: 30%;
+            margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            width: calc(33.333% - 20px);
-            padding: 15px;
+            overflow: hidden;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .project-card img {
-            max-width: 100%;
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            margin: 15px;
+        }
+        .product-card p {
+            margin: 15px;
+            color: #555;
+        }
+        .product-card button {
+            display: block;
+            margin: 15px auto;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background: #45a049;
         }
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #023e8a;
-            color: #fff;
+            padding: 10px;
+            background: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Discover my projects, skills, and contact information.</p>
+        <h1>Welcome to Our Product Website</h1>
+        <p>Find the best products tailored for your needs!</p>
     </header>
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
         <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
     </nav>
     <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hi! I'm [Your Name], a [Your Role/Profession]. I specialize in [Your Skills/Fields]. With a passion for creating impactful solutions, I love working on projects that make a difference.</p>
-        </section>
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project Title 1</h3>
-                    <p>Description of Project 1.</p>
-                </div>
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>Description of Project 2.</p>
-                </div>
-                <div class="project-card">
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>Project Title 3</h3>
-                    <p>Description of Project 3.</p>
-                </div>
+        <h2>Our Products</h2>
+        <div class="product">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>High-quality product description here.</p>
+                <button>Buy Now</button>
             </div>
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out via email at <a href="mailto:yourname@example.com">yourname@example.com</a> or connect with me on <a href="#">LinkedIn</a>.</p>
-        </section>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Amazing product description here.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Affordable product description here.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
     </div>
     <footer>
-        <p>© 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
